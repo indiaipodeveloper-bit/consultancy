@@ -48,7 +48,7 @@ export default function Pag() {
       <WhoAreWe />
 
       {/* youtbe videos Section */}
-      <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] flex flex-col  text-white justify-start gap-y-2.5 p-5 text-center my-5">
+      <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] py-20 flex flex-col  text-white justify-start gap-y-2.5 p-5 text-center my-5">
         <h2 className="text-2xl sm:text-3xl lg:text-5xl  poppins font-bold">
           Moments of Success
         </h2>

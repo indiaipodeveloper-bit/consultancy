@@ -2,7 +2,7 @@ import React from "react";
 
 const WhoAreWe = () => {
   return (
-    <div className="mx-auto px-4 py-5 flex flex-col  items-start gap-x-10 ">
+    <div className="mx-auto px-4 py-10 flex flex-col  items-start gap-x-10 ">
       <p className="text-3xl md:text-4xl text-black my-2.5 font-extrabold poppins text-center m-auto">
         Who Are We?
       </p>

@@ -28,7 +28,7 @@ const MoreSection = () => {
     },
   ];
   return (
-    <div className="py-1 text-center px-6 bg-white my-10">
+    <div className="py-20 text-center px-6 bg-white my-10">
       <p className="text-2xl md:text-4xl font-bold poppins monserrat mb-10">
         More About Team India IPO
       </p>

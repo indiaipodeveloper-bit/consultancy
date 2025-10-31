@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa";
 
 const WhyConsider = () => {
   return (
-    <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] text-white py-10 text-center px-4">
+    <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] text-white py-20 text-center px-4">
       <div className="font-semibold w-full sm:w-[60%] sora flex flex-col mx-auto  gap-2.5 mb-4">
         <p className="text-2xl md:text-4xl poppins">Why Consider an IPO? </p>
         <p className="text-lg">Raise Funds. Build Credibility. Grow Faster.</p>
