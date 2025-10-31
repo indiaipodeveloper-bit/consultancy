@@ -13,10 +13,10 @@ const WhyAreIPOsBetterOption = () => {
   ];
   return (
     <div className="mt-2.5 shadow-2xl px-6 py-10 text-center">
-      <p className="text-2xl md:text-4xl font-extrabold mb-8 poppins">
+      <p className="text-3xl md:text-4xl font-extrabold mb-8 poppins">
         Why are IPOs a Better Option to raise <br /> funds than Other Channels?
       </p>
-      <ul className="max-w-2xl py-10 bg-white px-2.5 flex flex-col gap-y-2.5 poppins rounded-2xl shadow-2xl mx-auto text-left">
+      <ul className="max-w-2xl py-10 font-semibold bg-white px-2.5 flex flex-col gap-y-2.5 poppins rounded-2xl shadow-2xl mx-auto text-left">
         {points.map((item) => (
           <li key={item} className="flex mb-2.5 items-center gap-2">
             <FaCheckCircle className="text-[#217bff] text-sm sm:text-lg  md:text-xl flex-shrink-0 transition-all duration-300" />{" "}

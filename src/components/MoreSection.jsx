@@ -29,7 +29,7 @@ const MoreSection = () => {
   ];
   return (
     <div className="py-20 text-center px-6 bg-white my-10">
-      <p className="text-2xl md:text-4xl font-bold poppins monserrat mb-10">
+      <p className="text-3xl md:text-4xl font-bold poppins monserrat mb-10">
         More About Team India IPO
       </p>
       <div className="flex flex-wrap justify-center items-center max-w-7xl gap-6  mx-auto">
@@ -50,7 +50,7 @@ const MoreSection = () => {
           </div>
         ))}
       </div>
-      <button className="mt-12 border-none w-full sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
+      <button className="mt-12 buttonAnimation border-none w-full font-bold sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white py-4 px-5 rounded-full transition">
         Check IPO Eligibility Now
       </button>
     </div>
