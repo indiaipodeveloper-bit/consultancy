@@ -3,11 +3,11 @@ import React from "react";
 const WhoAreWe = () => {
   return (
     <div className="mx-auto px-4 py-5 flex flex-col  items-start gap-x-10 ">
-      <p className="text-3xl md:text-4xl text-black my-2.5 font-extrabold text-center m-auto">
+      <p className="text-3xl md:text-4xl text-black my-2.5 font-extrabold poppins text-center m-auto">
         Who Are We?
       </p>
-      <div className="flex flex-wrap justify-center gap-5 w-full p-5">
-        <div className="w-full sm:w-[60%] rasa px-2.5  my-auto space-y-6 text-[17px] font-medium">
+      <div className="flex flex-wrap justify-center gap-5 w-full py-5">
+        <div className="w-full sm:w-[60%] text-start rasa px-2.5  my-auto space-y-6 text-[17px] font-medium">
           <p className="text-xl">
             India IPO is a powerhouse of expertise and brilliance, driving
             businesses and entrepreneurs forward through every step of their
@@ -36,14 +36,6 @@ const WhoAreWe = () => {
             smoothly.
           </p>
         </div>
-
-        {/* <div className="max-w-[520px]">
-          <img
-            src="https://msmexin.swipepages.media/2024/5/660e4b1da9efcd001168bcd3/whatsapp-image-2024-05-20-at-11-46-12--1--ry78fb-750.webp"
-            alt="Amit Kumar"
-            className="rounded-lg shadow-lg w-full mx-auto"
-          />
-        </div> */}
       </div>
     </div>
   );

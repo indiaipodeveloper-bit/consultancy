@@ -11,7 +11,7 @@ const WhyChooseIndiaIPO = () => {
     <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] text-white  py-6 px-6 text-center">
       <div className="max-w-5xl mx-auto">
         <div className="text-2xl md:text-4xl sora font-bold mb-4">
-          <p className="monserrat">Why Choose India IPO?</p>
+          <p className="poppins">Why Choose India IPO?</p>
         </div>
 
         <div className="flex justify-between items-center flex-col   gap-2.5 text-left  mb-10">
@@ -23,7 +23,7 @@ const WhyChooseIndiaIPO = () => {
           ))}
         </div>
 
-        <button className="border-none w-full my-5 sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-sm hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
+        <button className="border-none w-full my-5 sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
           Check IPO Eligibility Now
         </button>
       </div>

@@ -13,7 +13,7 @@ const WhyAreIPOsBetterOption = () => {
   ];
   return (
     <div className="mt-2.5 shadow-2xl px-6 py-10 text-center">
-      <p className="text-2xl md:text-4xl font-extrabold mb-8 monserrat">
+      <p className="text-2xl md:text-4xl font-extrabold mb-8 poppins">
         Why are IPOs a Better Option to raise <br /> funds than Other Channels?
       </p>
       <ul className="max-w-2xl py-10 bg-white px-2.5 flex flex-col gap-y-2.5 poppins rounded-2xl shadow-2xl mx-auto text-left">

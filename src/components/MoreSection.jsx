@@ -50,7 +50,7 @@ const MoreSection = () => {
           </div>
         ))}
       </div>
-      <button className="mt-12 border-none w-full sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-sm hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
+      <button className="mt-12 border-none w-full sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
         Check IPO Eligibility Now
       </button>
     </div>

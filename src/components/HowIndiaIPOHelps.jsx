@@ -26,9 +26,9 @@ const HowIndiaIPOHelps = () => {
   return (
     <div className="py-16 px-2.5 w-full bg-[#f6f6f6]  mx-auto text-center">
       <div className="px- max-w-5xl  mx-auto text-center">
-        <div className="font-extrabold text-2xl monserrat md:text-4xl poppins">
-          <p className=" font-bold monserrat">How India IPO Helps You</p>
-          <p className="font-bold monserrat">End-to-End IPO Advisory. One Expert Team.</p>
+        <div className="font-extrabold poppins text-2xl md:text-4xl">
+          <p className=" font-bold ">How India IPO Helps You</p>
+          <p className="font-bold ">End-to-End IPO Advisory. One Expert Team.</p>
           <p className="text-xl mt-2.5 mb-10">We simplify the entire process - from eligibility to listing:</p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">

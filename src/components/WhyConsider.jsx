@@ -3,9 +3,9 @@ import { FaCheck } from "react-icons/fa";
 
 const WhyConsider = () => {
   return (
-    <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] text-white py-5 text-center px-4">
+    <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] text-white py-10 text-center px-4">
       <div className="font-semibold w-full sm:w-[60%] sora flex flex-col mx-auto  gap-2.5 mb-4">
-        <p className="text-2xl md:text-4xl monserrat">Why Consider an IPO? </p>
+        <p className="text-2xl md:text-4xl poppins">Why Consider an IPO? </p>
         <p className="text-lg">Raise Funds. Build Credibility. Grow Faster.</p>
         <p className="">
           Going public isn’t just for large corporations - India’s SME platform
@@ -31,12 +31,12 @@ const WhyConsider = () => {
           </div>
         ))}
       </div>
-      <p className="text-white text-2xl monserrat md:text-4xl font-semibold">
+      <p className="text-white text-2xl poppins md:text-4xl font-semibold">
         India IPO helps you navigate every step of the journey with ease and
         transparency.
       </p>
 
-      <button className="my-10 border-none w-full sm:w-[50%] bg-[#2c65ca] cursor-pointer border sm:text-lg text-sm hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
+      <button className="my-10 border-none w-full sm:w-[50%] bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
         Book Free Consultation
       </button>
     </div>

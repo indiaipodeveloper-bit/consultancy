@@ -16,15 +16,15 @@ export default function Pag() {
     <div className=" text-gray-800 overflow-hidden">
       <div className="py-6 text-center">
         <div className=" mx-auto px-4">
-          <h1 className="text-2xl w-full  lg:w-[50%] m-auto  md:text-4xl font-bold mb-4">
-            <p className="monserrat">
+          <h1 className="text-4xl w-full lg:w-[50%] m-auto  md:text-4xl font-bold mb-4">
+            <p className="poppins">
               Is
               <span className="text-[#2c65ca]"> Your Business</span> Ready to Go
               <span className="text-[#2c65ca]"> Public?</span>
             </p>
           </h1>
 
-          <div className="text-sm sm:text-lg mb-6 w-full sm:w-[60%] m-auto font-bold sora">
+          <div className="text-md  sm:text-lg mb-6 w-full sm:w-[60%] m-auto font-semibold sora">
             <p className="">
               If your company’s turnover is ₹50 crore or more, you may already
               be eligible for an SME IPO. Unlock growth capital, credibility,
@@ -33,7 +33,7 @@ export default function Pag() {
           </div>
           <TopDetails />
 
-          <button className="my-10 border-none w-full sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-sm hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
+          <button className="my-10 border-none w-full sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-semibold py-4 px-5 rounded-full transition">
             Check IPO Eligibility Now
           </button>
         </div>
@@ -49,7 +49,7 @@ export default function Pag() {
 
       {/* youtbe videos Section */}
       <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] flex flex-col  text-white justify-start gap-y-2.5 p-5 text-center my-5">
-        <h2 className="text-xl sm:text-3xl lg:text-5xl  poppins font-bold">
+        <h2 className="text-2xl sm:text-3xl lg:text-5xl  poppins font-bold">
           Moments of Success
         </h2>
         <p className="text-yellow-500">
@@ -65,7 +65,7 @@ export default function Pag() {
 
       <WhyAreIPOsBetterOption />
 
-      <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] py-5 px-6">
+      <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] py-10 px-6">
         <p className="text-2xl md:text-4xl monserrat text-white poppins font-bold text-center mb-8">
           Frequently Asked Questions
         </p>
