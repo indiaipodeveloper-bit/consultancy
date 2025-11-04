@@ -10,6 +10,7 @@ import WhyChooseIndiaIPO from "./WhyChooseIndiaIPO";
 import TopDetails from "./TopDetails";
 import YoutubeSlider from "./YoutubeSlider";
 import WhyConsider from "./WhyConsider";
+import ContactForm from "./ContactForm";
 
 export default function Pag() {
   return (
@@ -72,6 +73,8 @@ export default function Pag() {
         </p>
         <FAQs />
       </div>
+
+      <ContactForm />
 
       <Footer />
     </div>
