@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {FaFileWaveform} from "react-icons/fa6"
+import { FaFileWaveform } from "react-icons/fa6";
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     businessTurnover: "",
@@ -43,7 +43,9 @@ export default function ContactForm() {
         {/* Header */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 mb-6">
           <div className="flex items-center mb-6">
-            <div className="w-12 flex justify-center items-center h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl mr-4"><FaFileWaveform className="text-white text-2xl" /></div>
+            <div className="w-12 flex justify-center items-center h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl mr-4">
+              <FaFileWaveform className="text-white text-2xl" />
+            </div>
             <div>
               <p className="text-2xl font-semibold text-gray-900">
                 Check if Your Company Qualifies
