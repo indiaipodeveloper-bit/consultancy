@@ -1,6 +1,6 @@
 import React from "react";
 
-const FAQs = () => {
+const FAQs = ({handleClickOnContactForm}) => {
   return (
     <div className="max-w-4xl flex justify-center flex-col mx-auto space-y-4">
       {/* first faq */}
@@ -132,7 +132,7 @@ const FAQs = () => {
         </div>
       </details>
 
-      <button className="mt-12 buttonAnimation border-none w-full sm:w-[50%] m-auto sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px]hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-bold py-4 px-5 rounded-full transition">
+      <button onClick={handleClickOnContactForm} className="mt-12 buttonAnimation  border-none w-full sm:w-[50%] m-auto sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px]hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white font-bold py-4 px-5 rounded-full transition">
         Start Your IPO Journey Today
       </button>
     </div>

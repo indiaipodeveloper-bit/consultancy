@@ -1,6 +1,6 @@
 import React from "react";
 
-const WhyChooseIndiaIPO = () => {
+const WhyChooseIndiaIPO = ({handleClickOnContactForm}) => {
   const points = [
     "8+ years of SME IPO experience",
     " Proven track record of successful listings",
@@ -23,7 +23,7 @@ const WhyChooseIndiaIPO = () => {
           ))}
         </div>
 
-        <button className="border-none buttonAnimation font-bold w-full my-5 sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white py-4 px-5 rounded-full transition">
+        <button onClick={handleClickOnContactForm} className="border-none buttonAnimation font-bold w-full my-5 sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white py-4 px-5 rounded-full transition">
           Check IPO Eligibility Now
         </button>
       </div>

@@ -11,8 +11,14 @@ import TopDetails from "./TopDetails";
 import YoutubeSlider from "./YoutubeSlider";
 import WhyConsider from "./WhyConsider";
 import ContactForm from "./ContactForm";
+import { useRef } from "react";
 
 export default function Pag() {
+  const ContactFormRef = useRef(null);
+  const handleClickOnContactForm = () => {
+    ContactFormRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className=" text-gray-800 overflow-hidden">
       <div className="py-6 text-center">
@@ -35,17 +41,20 @@ export default function Pag() {
           </div>
           <TopDetails />
 
-          <button className="my-10 buttonAnimation border-none w-full font-bold sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white py-4 px-5 rounded-full transition">
+          <button
+            onClick={handleClickOnContactForm}
+            className="my-10 buttonAnimation border-none w-full font-bold sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white py-4 px-5 rounded-full transition"
+          >
             Check IPO Eligibility Now
           </button>
         </div>
       </div>
 
-      <WhyConsider />
+      <WhyConsider handleClickOnContactForm={handleClickOnContactForm} />
 
       <HowIndiaIPOHelps />
 
-      <WhyChooseIndiaIPO />
+      <WhyChooseIndiaIPO handleClickOnContactForm={handleClickOnContactForm} />
 
       <WhoAreWe />
 
@@ -63,7 +72,7 @@ export default function Pag() {
       </div>
 
       {/* More About India IPO */}
-      <MoreSection />
+      <MoreSection handleClickOnContactForm={handleClickOnContactForm} />
 
       <WhyAreIPOsBetterOption />
 
@@ -71,10 +80,10 @@ export default function Pag() {
         <p className="text-3xl md:text-4xl monserrat text-white poppins font-bold text-center mb-8">
           Frequently Asked Questions
         </p>
-        <FAQs />
+        <FAQs handleClickOnContactForm={handleClickOnContactForm} />
       </div>
 
-      <ContactForm />
+      <ContactForm ContactFormRef={ContactFormRef} />
 
       <Footer />
     </div>

@@ -54,13 +54,13 @@ const YoutubeSlider = () => {
           </CarouselContent>
 
           <CarouselPrevious className="absolute left-1  top-1/2 text-black cursor-pointer z-50">
-            <button className="bg-white/90  rounded-full w-10 h-10 flex items-center justify-center shadow-md">
+            <button   className="bg-white/90 rounded-full w-10 h-10 flex items-center justify-center shadow-md">
               <FaArrowLeft />
             </button>
           </CarouselPrevious>
 
           <CarouselNext className="absolute right-1 top-1/2 text-black cursor-pointer  z-50">
-            <button className="bg-white/90   rounded-full w-10 h-10 flex items-center justify-center shadow-md">
+            <button className="bg-white/90  rounded-full w-10 h-10 flex items-center justify-center shadow-md">
               <FaArrowRight />
             </button>
           </CarouselNext>

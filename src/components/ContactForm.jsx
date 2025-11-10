@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { BackendUrl } from "../assets/constansts";
 import { useRef } from "react";
@@ -14,7 +14,7 @@ import {
   AlertDialogTrigger,
 } from "./ui/alert-dialog";
 import { Button } from "./ui/button";
-export default function ContactForm() {
+export default function ContactForm({ ContactFormRef }) {
   const [formData, setFormData] = useState({
     businessTurnover: "",
     fundraisingTimeline: "",
@@ -112,9 +112,12 @@ export default function ContactForm() {
       });
     }
   };
-  
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-12 px-4">
+    <div
+      ref={ContactFormRef}
+      className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-12 px-4"
+    >
       <div className="max-w-2xl rounded-2xl formShadow mx-auto">
         {/* Header */}
         <div className=" rounded-2xl  p-8 mb-6">
@@ -368,7 +371,7 @@ export default function ContactForm() {
                 handleSubmit();
               }
             }}
-            className="w-full font-bold sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white cursor-pointer py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105"
+            className="w-full  font-bold sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white cursor-pointer py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105"
           >
             Check Eligibility Now
           </button>

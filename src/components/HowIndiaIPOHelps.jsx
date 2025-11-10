@@ -35,7 +35,7 @@ const HowIndiaIPOHelps = () => {
           {reasons.map((r) => (
             <div
               key={r.text}
-              className="p-6 flex-wrap overflow-hidden justify-center bg-white poppins shadow-md shadow-gray-500 rounded-xl gap-y-2.5  flex items-center   gap-x-5  sm:flex-nowrap text-center sm:text-start sm:justify-start"
+              className="p-6 flex-wrap  overflow-hidden justify-center bg-white poppins shadow-md shadow-gray-500 rounded-xl gap-y-2.5  flex items-center   gap-x-5  sm:flex-nowrap text-center sm:text-start sm:justify-start"
             >
               <img src={r.icon} alt="" className="md:h-[70px] h-[150px] aspect-square transition-all duration-1000 " />
               <p className="text-lg  font-medium">{r.text}</p>

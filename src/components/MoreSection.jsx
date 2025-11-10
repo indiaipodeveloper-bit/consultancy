@@ -4,7 +4,7 @@ import SuccessfulIPOListings from "../assets/images/SuccessfulIPOListings.png"
 import StatesPresence from "../assets/images/StatesPresence.png"
 import IPOsInPipeline from "../assets/images/IPOsInPipeline.png"
 
-const MoreSection = () => {
+const MoreSection = ({handleClickOnContactForm}) => {
   const moreSectoinPoints = [
     {
       icon: SuccessfulConsultancies,
@@ -50,7 +50,7 @@ const MoreSection = () => {
           </div>
         ))}
       </div>
-      <button className="mt-12 buttonAnimation border-none w-full font-bold sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white py-4 px-5 rounded-full transition">
+      <button onClick={handleClickOnContactForm} className="mt-12 buttonAnimation border-none w-full font-bold sm:w-[50%] sora bg-[#2c65ca] cursor-pointer border sm:text-lg text-[18px] hover:-translate-y-2.5 hover:bg-[#5b94eb] duration-500 text-white py-4 px-5 rounded-full transition">
         Check IPO Eligibility Now
       </button>
     </div>
