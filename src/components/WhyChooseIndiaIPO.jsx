@@ -11,7 +11,7 @@ const WhyChooseIndiaIPO = ({handleClickOnContactForm}) => {
     <div className="bg-gradient-to-b from-[#0a3757] via-[#0a3757] to-[#145c8a] text-white  py-20 px-6 text-center">
       <div className="max-w-5xl mx-auto">
         <div className="text-3xl md:text-4xl sora font-bold mb-4">
-          <p className="poppins">Why Choose India IPO?</p>
+          <p className="poppins">Why Choose Bharat IPO?</p>
         </div>
 
         <div className="flex justify-between items-center flex-col   gap-2.5 text-left  mb-10">

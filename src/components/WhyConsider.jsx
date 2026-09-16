@@ -36,7 +36,7 @@ const WhyConsider = ({ handleClickOnContactForm }) => {
         ))}
       </div>
       <p className="text-white text-xl poppins md:text-4xl font-light">
-        India IPO helps you navigate every step of the journey with ease and
+        Bharat IPO helps you navigate every step of the journey with ease and
         transparency.
       </p>
 

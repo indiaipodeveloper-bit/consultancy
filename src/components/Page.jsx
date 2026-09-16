@@ -38,7 +38,7 @@ export default function Pag() {
             <p className="">
               If your company’s turnover is ₹50 crore or more, you may already
               be eligible for an SME IPO. Unlock growth capital, credibility,
-              and visibility with India IPO - your trusted SME listing partner.
+              and visibility with Bharat IPO - your trusted SME listing partner.
             </p>
           </div>
           <TopDetails />

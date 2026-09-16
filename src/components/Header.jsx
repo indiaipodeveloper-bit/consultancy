@@ -1,5 +1,4 @@
-// import BharatIPOLogo from "../assets/images/bharat_ipo_logo.jpg";
-const BharatIPOLogo="";
+import BharatIPOLogo from "../assets/images/BharatIPOLogo.png";
 const Header = ({handleClickOnContactForm}) => {
   return (
     <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur">
@@ -7,12 +6,12 @@ const Header = ({handleClickOnContactForm}) => {
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          aria-label="India IPO home"
+          aria-label="Bharat IPO home"
         >
           <img
             src={BharatIPOLogo}
             alt="BharatIPO Logo"
-            className="h-10 w-auto sm:h-12"
+            className="h-18 w-auto"
           />
         </button>
 

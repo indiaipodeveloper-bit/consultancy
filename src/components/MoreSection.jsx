@@ -30,7 +30,7 @@ const MoreSection = ({handleClickOnContactForm}) => {
   return (
     <div className="py-20 text-center px-6 bg-white my-10">
       <p className="text-3xl md:text-4xl font-bold poppins monserrat mb-10">
-        More About Team India IPO
+        More About Team Bharat IPO
       </p>
       <div className="flex flex-wrap justify-center items-center max-w-7xl gap-6  mx-auto">
         {moreSectoinPoints.map((item, idx) => (
