@@ -9,7 +9,7 @@ const WhoAreWe = () => {
       <div className="flex flex-wrap justify-center gap-5 w-full py-5">
         <div className="w-full sm:w-[60%] text-center rasa px-2.5  my-auto space-y-6 text-[17px] font-medium">
           <p className="">
-            India IPO is a powerhouse of expertise and brilliance, driving
+            Bharat IPO is a powerhouse of expertise and brilliance, driving
             businesses and entrepreneurs forward through every step of their
             initial public offering (IPO) journey. With decades of rich
             experience across investment banking, capital markets, and corporate
@@ -18,7 +18,7 @@ const WhoAreWe = () => {
             market.
           </p>
           <p className="">
-            Specializing in both Mainboard and SME IPOs, the team of India IPO -
+            Specializing in both Mainboard and SME IPOs, the team of Bharat IPO -
             the best IPO consultant in India - relentlessly demonstrates
             actionable strategies designed to maximize valuation and unlock
             liquidity. Having guided over 7,500 companies to market leadership,

@@ -12,6 +12,7 @@ import YoutubeSlider from "./YoutubeSlider";
 import WhyConsider from "./WhyConsider";
 import ContactForm from "./ContactForm";
 import { useRef } from "react";
+import Header from "./Header";
 
 export default function Pag() {
   const ContactFormRef = useRef(null);
@@ -21,6 +22,7 @@ export default function Pag() {
 
   return (
     <div className=" text-gray-800 overflow-hidden">
+      <Header handleClickOnContactForm={handleClickOnContactForm}/>
       <div className="py-6 text-center">
         <div className=" mx-auto px-4">
           <h1 className="text-4xl w-full lg:w-[50%] m-auto  md:text-4xl font-bold mb-4">
@@ -36,7 +38,7 @@ export default function Pag() {
             <p className="">
               If your company’s turnover is ₹50 crore or more, you may already
               be eligible for an SME IPO. Unlock growth capital, credibility,
-              and visibility with India IPO - your trusted SME listing partner.
+              and visibility with Bharat IPO - your trusted SME listing partner.
             </p>
           </div>
           <TopDetails />

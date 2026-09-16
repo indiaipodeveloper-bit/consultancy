@@ -1,14 +1,14 @@
 import React from "react";
 import { FaGlobe, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import IndiaIPOLogo from "../assets/images/indiaipo.jpg";
+import BharatIPOLogo from "../assets/images/BharatIPOLogo.png";
 
 const Footer = () => {
   return (
     <>
       <footer className="text-center relative flex-wrap justify-center gap-x-32 gap-y-5 items-center flex py-6 text-sm">
         <div className="justify-center xl:absolute  left-[15%]">
-          <img src={IndiaIPOLogo} className="w-[100px] " alt="" />
+          <img src={BharatIPOLogo} alt="BharatIPO Logo" className="h-18 w-auto " />
         </div>
         <div className="text-center px-2.5 flex flex-col gap-2.5 text-sm font-semibold">
           <p className="font-bold text-2xl">Contact Us</p>
@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="my-2 flex flex-col gap-1">
             <p className="">Copyright 2025 - All rights reserved</p>
           <p className="">
-            India IPO - Empowering Indian Businesses to Go Public.
+            Bharat IPO - IPO From Education to Execution 
           </p>
           </div>
         </div>

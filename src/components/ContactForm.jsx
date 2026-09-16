@@ -14,6 +14,9 @@ import {
   AlertDialogTrigger,
 } from "./ui/alert-dialog";
 import { Button } from "./ui/button";
+
+const GOOGLE_SHEET_URL=import.meta.env.VITE_GOOGLE_SHEET_URL;
+
 export default function ContactForm({ ContactFormRef }) {
   const [formData, setFormData] = useState({
     businessTurnover: "",
@@ -25,7 +28,7 @@ export default function ContactForm({ ContactFormRef }) {
     townCity: "",
     companyName: "",
   });
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const formDone = useRef(null);
 
   const handleChange = (e) => {
@@ -89,27 +92,68 @@ export default function ContactForm({ ContactFormRef }) {
     return true;
   };
 
+  // const handleSubmit = async () => {
+  //   const res = await axios.post(`${BackendUrl}/api/sme-ipo/lead`, formData, {
+  //     withCredentials: true,
+  //   });
+  //   if (res.status == 200) {
+  //     formDone.current.click();
+  //     setFormData({
+  //       businessTurnover: "",
+  //       fundraisingTimeline: "",
+  //       preferredCallTime: "",
+  //       fullName: "",
+  //       phoneNumber: "",
+  //       email: "",
+  //       townCity: "",
+  //       companyName: "",
+  //     });
+  //     window.scroll({
+  //       top: 0,
+  //       left: 0,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // };
+
   const handleSubmit = async () => {
-    const res = await axios.post(`${BackendUrl}/api/sme-ipo/lead`, formData, {
-      withCredentials: true,
-    });
-    if (res.status == 200) {
-      formDone.current.click();
-      setFormData({
-        businessTurnover: "",
-        fundraisingTimeline: "",
-        preferredCallTime: "",
-        fullName: "",
-        phoneNumber: "",
-        email: "",
-        townCity: "",
-        companyName: "",
+    if(isSubmitting) return;
+    setIsSubmitting(true);
+    try {
+      const response = await fetch(GOOGLE_SHEET_URL, {
+        method: "POST",
+        body: JSON.stringify(formData),
       });
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        formDone.current.click();
+
+        setFormData({
+          businessTurnover: "",
+          fundraisingTimeline: "",
+          preferredCallTime: "",
+          fullName: "",
+          phoneNumber: "",
+          email: "",
+          townCity: "",
+          companyName: "",
+        });
+
+        window.scroll({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      } else {
+        throw new Error(result.error || "Failed to save lead");
+      }
+    } catch (error) {
+      console.error("Google Sheets submission failed:", error);
+      alert("Something went wrong. Please try again.");
+    } finally{
+        setIsSubmitting(false);
     }
   };
 
@@ -281,7 +325,15 @@ export default function ContactForm({ ContactFormRef }) {
               minLength={10}
               maxLength={10}
               value={formData.phoneNumber}
-              onChange={handleChange}
+              onChange={(e)=>{
+                const value = e.target.value.replace(/\D/g, "").slice(0, 10);
+                handleChange({
+                  target: {
+                    name: "phoneNumber",
+                    value,
+                  }
+                })
+              }}
               placeholder="Enter your phone number"
               className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all text-gray-900"
             />
@@ -366,6 +418,8 @@ export default function ContactForm({ ContactFormRef }) {
             </AlertDialogContent>
           </AlertDialog>
           <button
+            disabled={isSubmitting}
+            type="button"
             onClick={() => {
               if (validateForm()) {
                 handleSubmit();
@@ -373,7 +427,13 @@ export default function ContactForm({ ContactFormRef }) {
             }}
             className="w-full  font-bold sm:w-auto bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white cursor-pointer py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:scale-105"
           >
-            Check Eligibility Now
+          {
+            isSubmitting ? (
+              <div className="flex gap-2"> <span className="w-5 h-5 block border-2 border-white border-t-transparent rounded-full animate-spin" /> Submitting... </div>
+            ):
+            "Check Eligibility Now"
+
+          }
           </button>
         </div>
       </div>

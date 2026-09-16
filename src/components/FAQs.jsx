@@ -31,7 +31,7 @@ const FAQs = ({handleClickOnContactForm}) => {
             <li className="">Clear use-of-proceeds plan</li>
           </ul>
           <p>
-            India IPO offers a free IPO readiness assessment to help you
+            Bharat IPO offers a free IPO readiness assessment to help you
             evaluate and prepare across financial, legal and strategic
             parameters.
           </p>
@@ -66,7 +66,7 @@ const FAQs = ({handleClickOnContactForm}) => {
           </div>
         </div>
         <p className="font-semibold text-yellow-300">
-          India IPO helps you weigh these carefully and plan accordingly.
+          Bharat IPO helps you weigh these carefully and plan accordingly.
         </p>
       </details>
 
@@ -74,12 +74,12 @@ const FAQs = ({handleClickOnContactForm}) => {
 
       <details className="bg-transparent border border-white text-white p-4 rounded-lg shadow hover:shadow-md transition-all duration-1000">
         <summary className="font-semibold transition-all lg:text-xl duration-500 cursor-pointer">
-          How long does the IPO process usually take with the India IPO?
+          How long does the IPO process usually take with the Bharat IPO?
         </summary>
         <p className="mt-2 text-sm text-yellow-300">
           An average SME IPO requires 4-6 months between the assessment and the
           listing, whereas a Mainboard IPO may require 6-12 months. The timing
-          will depend on your readiness, approvals and market conditions. India
+          will depend on your readiness, approvals and market conditions. Bharat
           IPO keeps you on track with end-to-end support.
         </p>
       </details>
@@ -88,10 +88,10 @@ const FAQs = ({handleClickOnContactForm}) => {
 
       <details className="bg-transparent border border-white text-white p-4 rounded-lg shadow hover:shadow-md transition-all duration-1000">
         <summary className="font-semibold transition-all lg:text-xl duration-500 cursor-pointer">
-          How does India IPO assist in the IPO Process?
+          How does Bharat IPO assist in the IPO Process?
         </summary>
         <div className="text-yellow-300">
-          <p>India IPO provides comprehensive advisory services, including:</p>
+          <p>Bharat IPO provides comprehensive advisory services, including:</p>
           <ul className="list-disc px-4 font-light">
             <li className="">IPO readiness evaluation</li>
             <li className="">Due diligence & documentation</li>
@@ -111,7 +111,7 @@ const FAQs = ({handleClickOnContactForm}) => {
 
       <details className="bg-transparent border border-white text-white p-4 rounded-lg shadow hover:shadow-md transition-all duration-1000">
         <summary className="font-semibold transition-all duration-500 lg:text-xl cursor-pointer">
-          What makes India IPO different from other IPO consultancy firms?
+          What makes Bharat IPO different from other IPO consultancy firms?
         </summary>
         <div className="text-yellow-300">
           <p>
