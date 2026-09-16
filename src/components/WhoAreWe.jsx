@@ -14,7 +14,7 @@ const WhoAreWe = () => {
             initial public offering (IPO) journey. With decades of rich
             experience across investment banking, capital markets, and corporate
             strategy, our goal is to guide companies & their founders to grow
-            faster, raise funds smartly, and unlock new opportunities in the
+            faster, raise funds smartly and unlock new opportunities in the
             market.
           </p>
           <p className="">
