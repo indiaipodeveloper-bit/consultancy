@@ -1,14 +1,15 @@
 import React from "react";
 import { FaGlobe, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import IndiaIPOLogo from "../assets/images/indiaipo.jpg";
+// import BharatIPOLogo from "../assets/images/bharat_ipo_logo.jpg";
 
+const BharatIPOLogo="";
 const Footer = () => {
   return (
     <>
       <footer className="text-center relative flex-wrap justify-center gap-x-32 gap-y-5 items-center flex py-6 text-sm">
         <div className="justify-center xl:absolute  left-[15%]">
-          <img src={IndiaIPOLogo} className="w-[100px] " alt="" />
+          <img src={BharatIPOLogo} alt="BharatIPO Logo" className="w-[100px] " />
         </div>
         <div className="text-center px-2.5 flex flex-col gap-2.5 text-sm font-semibold">
           <p className="font-bold text-2xl">Contact Us</p>
