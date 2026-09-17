@@ -11,9 +11,7 @@ const WhoAreWe = () => {
           <p className="">
             Bharat IPO is a powerhouse of expertise and brilliance, driving
             businesses and entrepreneurs forward through every step of their
-            initial public offering (IPO) journey. With decades of rich
-            experience across investment banking, capital markets, and corporate
-            strategy, our goal is to guide companies & their founders to grow
+            initial public offering (IPO) journey. With decades of combined experience across IPO advisory, capital markets and corporate strategy, our goal is to guide companies & their founders to grow
             faster, raise funds smartly and unlock new opportunities in the
             market.
           </p>
@@ -21,7 +19,7 @@ const WhoAreWe = () => {
             Specializing in both Mainboard and SME IPOs, the team of Bharat IPO -
             the best IPO consultant in India - relentlessly demonstrates
             actionable strategies designed to maximize valuation and unlock
-            liquidity. Having guided over 7,500 companies to market leadership,
+            liquidity. Having guided over 9,200 companies to market leadership,
             our unparalleled strategic fundraising and scale-up acumen sets us
             apart.
           </p>
