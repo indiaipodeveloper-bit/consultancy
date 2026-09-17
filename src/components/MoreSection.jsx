@@ -8,23 +8,23 @@ const MoreSection = ({handleClickOnContactForm}) => {
   const moreSectoinPoints = [
     {
       icon: SuccessfulConsultancies,
-      number: "7500+",
-      text: "7500+ Successful Consultancies",
+      number: "9200+",
+      text: "9200+ Successful Consultancies",
     },
     {
       icon: SuccessfulIPOListings,
-      number: "137+",
-      text: "137+ Successful IPO Listings",
+      number: "140+",
+      text: "140+ Successful IPO Listings",
     },
     {
       icon: StatesPresence,
-      number: "20+",
-      text: "20+ States Presence",
+      number: "",
+      text: "Pan India Presence",
     },
     {
       icon: IPOsInPipeline,
-      number: "20+",
-      text: "20+ IPOs in Pipeline",
+      number: "24+",
+      text: "24+ IPOs in Pipeline",
     },
   ];
   return (
