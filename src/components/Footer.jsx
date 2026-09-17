@@ -33,16 +33,16 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex justify-center flex-wrap px-10 items-center gap-4 gap-x-5">
-            <a href="" className="hover:text-blue-500">
+            <a href="https://www.indiaipo.in/disclaimer" className="hover:text-blue-500">
               Disclaimer
             </a>
             <p className="">|</p>
-            <a href="" className="hover:text-blue-500">
+            <a href="https://www.indiaipo.in/privacypolicy" className="hover:text-blue-500">
               Privacy{" "}
             </a>
             <p className="">|</p>
 
-            <a href="" className="hover:text-blue-500">
+            <a href="https://www.indiaipo.in/terms-conditions" className="hover:text-blue-500">
               Terms & Conditions{" "}
             </a>
           </div>
