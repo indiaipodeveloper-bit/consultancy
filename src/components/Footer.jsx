@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           <div className="my-2 flex flex-col gap-1">
-            <p className="">Copyright 2025 - All rights reserved</p>
+            <p className="">Copyright {new Date().getFullYear()}- All rights reserved</p>
           <p className="">
             Bharat IPO - IPO From Education to Execution 
           </p>
